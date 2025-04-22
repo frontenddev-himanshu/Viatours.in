@@ -1,26 +1,335 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --btnColor-: #EB662B;
+
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #FFFFFF;
+}
+
+.hamb {
+  display: none;
+}
+
+.custom-shape-divider-bottom-1745244864 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1745244864 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 56px;
+}
+
+.custom-shape-divider-bottom-1745244864 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.heroContent {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width: 1599px) {
+
+  nav, .tourzContainer,.trendingContainer {
+    padding: 0 8rem;
+  }
+
+  .hamb {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamb {
+    display: none;
+  }
+
+  .heroSection {
+    height: 50vh;
+  }
+
+  .heroBg {
+    padding: 0 4rem;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+  nav, .tourzContainer, .trendingContainer {
+    padding: 0 5rem;
+    z-index: 100;
+  }
+
+  .navRight {
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 50px 0;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid #757575;
+    transition: .4s all ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+  }
+
+  .navRight.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .hamb {
+    display: flex;
+  }
+
+  .heroSection {
+    height: 40vh;
+  }
+
+  .heroBg {
+    padding: 0 2rem;
+  }
+
+  .heroContent {
+    width: 70%;
+  }
+
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+
+  .heroContent p {
+    font-size: 10px;
+  }
+
+
+  .locImg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .locCon span {
+    font-size: 9px;
+  }
+
+  .locCon p {
+    font-size: 8px;
+  }
+
+  .srch {
+    padding-left: 20px;
+  }
+
+  .tCard {
+    width: 200px;
+  }
+
+  .tSvg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tCon span {
+    font-size: 12px;
+  }
+
+  .tCon p {
+    font-size: 9px;
+  }
+
+  .tourzContainer {
+    margin-top: 60px;
+  }
+
+  .tourzCardContainer {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .trendingImgs  {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: start;
+  }
+
+  .trnImg  {
+    width: 90px;
+    height: 90px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  nav, .tourzContainer, .trendingContainer {
+    padding: 0 1rem;
+  }
+
+  .hamb {
+    display: flex;
+  }
+
+  .hamb .line {
+    width: 30px;
+  }
+
+  .hamb .line:nth-child(2) {
+    margin: 5px 0;
+  }
+
+  .srchUpper {
+    display: none;
+  }
+
+  .Links ul {
+    font-size: 11px;
+  }
+
+  .login {
+    font-size: 11px;
+  }
+
+  .navRight {
+    padding: 30px 0;
+  }
+
+
+  .heroSection {
+    height: 50vh;
+  }
+
+  .heroBg {
+    padding: 0 1rem;
+  }
+
+  .heroContent {
+    width: 80%;
+  }
+
+  .heroContent h1 {
+    font-size: 1.4rem;
+  }
+
+  .heroContent p {
+    font-size: 8px;
+  }
+
+
+  .locImg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .locCon span {
+    font-size: 8px;
+  }
+
+  .locCon p {
+    font-size: 7px;
+  }
+
+  .srch {
+    font-size: 8px;
+    display: block;
+    padding: 10px 30px;
+  }
+
+  .loc {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .tCard {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tSvg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .tCon {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .tCon span {
+    font-size: 10px;
+  }
+
+  .tCon p {
+    font-size: 8px;
+    width: 100%;
+  }
+
+  .tourzContainer, .trendingContainer {
+    margin-top: 60px;
+  }
+
+  .tourzCardContainer {
+   flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .tourzHead h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .trendingHeading h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .trnImg  {
+    width: 70px;
+    height: 70px;
+  }
+
+  .trendingImgs {
+    justify-content: center;
+    gap: 30px;
+  }
+  .trnContent {
+    margin-top: 5px;
+  }
+
+  .trnContent span {
+    font-size: 10px;
+  }
+
+  .trnContent p {
+    font-size: 9px;
+  }
+
+  
+
 }
