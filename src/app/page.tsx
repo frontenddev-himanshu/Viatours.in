@@ -316,7 +316,7 @@ export default function Home() {
                   Destination
                 </h1>
                 <p className="text-[12px] text-white mt-4">
-                  Limited time offer, don't miss the opportunity
+                  Limited time offer, dont miss the opportunity
                 </p>
 
                 <div className="grabBtn flex items-center justify-center mt-10">
