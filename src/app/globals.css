@@ -45,7 +45,10 @@ body {
 
 @media screen and (max-width: 1599px) {
 
-  nav, .tourzContainer,.trendingContainer {
+  nav,
+  .tourzContainer,
+  .trendingContainer,
+  .popularContainer {
     padding: 0 8rem;
   }
 
@@ -66,6 +69,16 @@ body {
     padding: 0 4rem;
   }
 
+  .popularImgs {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .popularCard {
+    width: 280px;
+  }
+
 
 }
 
@@ -73,7 +86,9 @@ body {
 
 @media screen and (max-width: 1200px) {
 
-  nav, .tourzContainer, .trendingContainer {
+  nav,
+  .tourzContainer,
+  .trendingContainer {
     padding: 0 5rem;
     z-index: 100;
   }
@@ -168,16 +183,44 @@ body {
     gap: 20px;
   }
 
-  .trendingImgs  {
+  .trendingImgs {
     flex-wrap: wrap;
     gap: 40px;
     justify-content: start;
   }
 
-  .trnImg  {
+  .trnImg {
     width: 90px;
     height: 90px;
   }
+
+  .popularContainer {
+    padding: 0 5rem;
+  }
+
+  .popularCard {
+    width: 220px;
+  }
+
+  .popLoc {
+    font-size: 10px;
+  }
+
+  .popTitle {
+    font-size: 12px;
+    padding: 2px 0;
+  }
+
+  .popRating {
+    font-size: 10px;
+
+  }
+
+  .popPrice,
+  .popDays {
+    font-size: 10px;
+  }
+
 
 
 }
@@ -185,7 +228,9 @@ body {
 
 @media screen and (max-width: 768px) {
 
-  nav, .tourzContainer, .trendingContainer {
+  nav,
+  .tourzContainer,
+  .trendingContainer {
     padding: 0 1rem;
   }
 
@@ -289,12 +334,13 @@ body {
     width: 100%;
   }
 
-  .tourzContainer, .trendingContainer {
+  .tourzContainer,
+  .trendingContainer {
     margin-top: 60px;
   }
 
   .tourzCardContainer {
-   flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
   }
@@ -309,7 +355,7 @@ body {
     text-align: center;
   }
 
-  .trnImg  {
+  .trnImg {
     width: 70px;
     height: 70px;
   }
@@ -318,6 +364,7 @@ body {
     justify-content: center;
     gap: 30px;
   }
+
   .trnContent {
     margin-top: 5px;
   }
@@ -330,6 +377,46 @@ body {
     font-size: 9px;
   }
 
-  
+  .popularContainer {
+    padding: 0 1rem;
+    margin-top: 50px;
+  }
+
+  .popularCard {
+    width: 100%;
+  }
+
+  .popLoc {
+    font-size: 10px;
+  }
+
+  .popularI {
+    height: 200px;
+  }
+
+  .popTitle {
+    font-size: 12px;
+    padding: 2px 0;
+  }
+
+  .popRating {
+    font-size: 10px;
+
+  }
+
+  .popPrice,
+  .popDays {
+    font-size: 10px;
+  }
+
+  .popularHeading {
+    text-align: center;
+  }
+
+  .popularHeading h2 {
+    font-size: 1rem;
+  }
+
+
 
 }
