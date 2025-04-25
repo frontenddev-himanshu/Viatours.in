@@ -22,6 +22,8 @@ import pop1 from "@/images/pop-1.jpg";
 import pop2 from "@/images/pop-2.jpg";
 import pop3 from "@/images/pop-3.jpg";
 import pop4 from "@/images/pop-4.jpg";
+import Grab from "@/images/grab.jpg";
+import BookBtn from "@/components/bookNow";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -248,7 +250,7 @@ export default function Home() {
         <div className="popularWrapper">
           <div className="popularHeading">
             <h2 className="text-[#05073C] text-[1.3rem] font-[700]">
-              
+
               Popular destinations
             </h2>
           </div>
@@ -287,6 +289,41 @@ export default function Home() {
             <PopularCard popImg={pop4} popAlt={"New York, USA"} popLoc={"Paris, France"} popTitle={"Mauna Kea Summit Sunset and Stars Free Astro Photos Hilo Kona Waikoloa Pick Up"} popRating={"4.8 (243)"} popDays={"4 days"} popPrice={"$771"} />
 
 
+          </div>
+        </div>
+      </div>
+
+
+
+
+      {/* grab */}
+      <div className="grabContainer w-full px-[5rem] mt-[80px]">
+        <div className="grabWrapper w-full h-[50vh] rounded-[20px] relative overflow-hidden">
+          <div className="grabbg w-full h-full relative">
+            <Image
+              src={Grab}
+              alt="heroBg"
+              className="hBg w-full h-full object-cover rounded-2xl relative"
+            />
+
+            <div className="grabCon absolute left-0 right-0 top-0 bottom-0 w-full h-full bg-[#00000028]">
+              <div
+                className={`${poppins.className} grabContent flex flex-col justify-center items-center text-center h-full`}
+              >
+                <h1 className="text-5xl font-bold text-white w-[40%]">
+                  Grab up to 35% off
+                  on your favorite
+                  Destination
+                </h1>
+                <p className="text-[12px] text-white mt-4">
+                  Limited time offer, don't miss the opportunity
+                </p>
+
+                <div className="grabBtn flex items-center justify-center mt-10">
+                  <BookBtn />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

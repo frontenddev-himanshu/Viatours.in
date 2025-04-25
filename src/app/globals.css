@@ -65,7 +65,7 @@ body {
     height: 50vh;
   }
 
-  .heroBg {
+  .heroBg, .grabContainer {
     padding: 0 4rem;
   }
 
@@ -220,6 +220,18 @@ body {
   .popDays {
     font-size: 10px;
   }
+
+  .grabWrapper {
+    height: 40vh;
+  }
+
+  .grabContent h1 {
+    font-size: 32px;
+  }
+  .grabContent p {
+    font-size: 10px;
+  }
+
 
 
 
@@ -416,6 +428,24 @@ body {
   .popularHeading h2 {
     font-size: 1rem;
   }
+
+  .grabContainer {
+    margin-top: 50px;
+    padding: 0 1rem;
+  }
+
+  .grabContent h1 {
+    font-size: 22px;
+    width: 100%;
+  }
+  .grabContent p {
+    font-size: 8px;
+  }
+
+  .grabBtn {
+    margin-top: 20px;
+  }
+
 
 
 
