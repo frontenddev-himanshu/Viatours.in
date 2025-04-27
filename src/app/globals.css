@@ -42,13 +42,44 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.footerInput label {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  right: 10px;
+}
+
+.custom-shape-divider-top-1745766500 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1745766500 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+}
+
+.custom-shape-divider-top-1745766500 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
 
 @media screen and (max-width: 1599px) {
 
   nav,
   .tourzContainer,
   .trendingContainer,
-  .popularContainer {
+  .popularContainer,
+  .thingsContainer,
+  .reviewContainer,
+  .travelContainer {
     padding: 0 8rem;
   }
 
@@ -65,7 +96,8 @@ body {
     height: 50vh;
   }
 
-  .heroBg, .grabContainer {
+  .heroBg,
+  .grabContainer {
     padding: 0 4rem;
   }
 
@@ -77,6 +109,10 @@ body {
 
   .popularCard {
     width: 280px;
+  }
+
+  .topWrapper {
+    padding: 80px 4rem;
   }
 
 
@@ -194,7 +230,10 @@ body {
     height: 90px;
   }
 
-  .popularContainer {
+  .popularContainer,
+  .thingsContainer,
+  .offerContainer,
+  .travelContainer {
     padding: 0 5rem;
   }
 
@@ -228,12 +267,105 @@ body {
   .grabContent h1 {
     font-size: 32px;
   }
+
   .grabContent p {
     font-size: 10px;
   }
 
+  .imgesSection {
+    height: 350px;
+  }
+
+  .overlay span {
+    font-size: 12px;
+  }
 
 
+  .topWrapper {
+    padding: 80px 4rem;
+  }
+
+  .topContainer {
+    padding: 0 1.5rem;
+  }
+
+  .reviewImg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .customerName {
+    font-size: 12px;
+  }
+
+  .customerText {
+    font-size: 12px;
+  }
+
+  .customerSecName {
+    font-size: 10px;
+  }
+
+  .customerRole {
+    font-size: 10px;
+  }
+
+
+  .offerContainer {
+    padding: 0 2rem;
+  }
+
+  .upperOffer {
+    font-size: 30px;
+  }
+
+  .middleOffer p {
+    font-size: 10px;
+  }
+
+  .lowerContent p {
+    font-size: 10px;
+  }
+
+  .offerInput input {
+    width: 250px;
+  }
+
+  .travelCardwrapper {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+  }
+
+
+  .footerContainer {
+    padding: 0 2rem;
+    margin-top: 50px;
+  }
+
+  .footerWrapper {
+    padding: 50px 3rem;
+  }
+
+  .footerUpper {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .footerLower {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 40px;
+  }
+
+  .copyrightContainer {
+    padding: 20px 2rem;
+    flex-direction: column;
+    gap: 20px;
+  }
 
 }
 
@@ -429,6 +561,10 @@ body {
     font-size: 1rem;
   }
 
+  .reviewHead h2 {
+    font-size: 1rem;
+  }
+
   .grabContainer {
     margin-top: 50px;
     padding: 0 1rem;
@@ -438,6 +574,7 @@ body {
     font-size: 22px;
     width: 100%;
   }
+
   .grabContent p {
     font-size: 8px;
   }
@@ -446,7 +583,193 @@ body {
     margin-top: 20px;
   }
 
+  .imgesSection {
+    height: 350px;
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+  }
+
+  .overlay span {
+    font-size: 10px;
+  }
+
+  .leftImg {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .sideImg {
+    height: 48%;
+  }
+
+  .thingsContainer,
+  .reviewContainer {
+    padding: 0 1rem;
+    margin-top: 50px;
+  }
+
+  .thingsImg {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .sideImg {
+    width: 100%;
+  }
+
+  .rightPopular {
+    width: 100%;
+  }
+
+  .leftPopular {
+    width: 100%;
+  }
+
+  .upperImg,
+  .lowerImg,
+  .sideImg {
+    height: 200px;
+  }
+
+  .topWrapper {
+    padding: 50px 1rem;
+  }
+
+  .topContainer {
+    padding: 0 1rem;
+  }
+
+  .reviewWrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .reviewCard {
+    width: 100%;
+  }
+
+  .reviewImg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .customerName {
+    font-size: 8px;
+  }
+
+  .customerText {
+    font-size: 10px;
+  }
+
+  .customerSecName {
+    font-size: 9px;
+  }
+
+  .customerRole {
+    font-size: 8px;
+  }
+
+  .offerContainer {
+    padding: 0 1rem;
+  }
+
+  .upperOffer {
+    font-size: 20px;
+  }
+
+  .middleOffer p {
+    font-size: 8px;
+  }
+
+  .lowerContent p {
+    font-size: 8px;
+  }
+
+  .offerInput input {
+    width: 150px;
+    height: 40px;
+  }
+
+  .offerInput input::placeholder {
+    font-size: 10px;
+  }
+
+  .offerWrapper {
+    height: 35vh;
+  }
+
+  .sendBtn {
+    height: 40px;
+    font-size: 10px;
+  }
+
+  .travelCardwrapper {
+    flex-direction: column;
+  }
+
+  .travelContainer {
+    padding: 0 1rem;
+    margin-top: 50px;
+  }
+
+  .travel-card {
+    width: 100%;
+  }
+
+  .travelHeading {
+    text-align: center;
+  }
+
+  .travelHeading h2 {
+    font-size: 1rem;
+  }
+
+  .footerContainer {
+    padding: 0 1rem;
+  }
+
+  .footerWrapper {
+    padding: 50px 1rem;
+  }
 
 
+  .speak {
+    font-size: 11px;
+  }
+
+  .foll {
+    font-size: 8px;
+  }
+
+  .footerUpper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footerLinks h4 {
+    font-size: 11px;
+  }
+
+  .footerLinks ul {
+    font-size: 8px;
+  }
+
+  .footerLower {
+    justify-content: start;
+  }
+
+  .footerInput {
+    width: 80%;
+  }
+
+
+  .copyright {
+    padding: 20px 1rem;
+    flex-direction: column;
+    gap: 10px;
+  }
 
 }
